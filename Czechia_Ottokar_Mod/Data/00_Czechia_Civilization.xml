@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+
+  <Types>
+    <Row Type="CIVILIZATION_CZECHIA" Kind="KIND_CIVILIZATION"/>
+    <Row Type="TRAIT_CIVILIZATION_OSTSIEDLUNG" Kind="KIND_TRAIT"/>
+    <Row Type="TRAIT_CIVILIZATION_CZECH_BREWERY" Kind="KIND_TRAIT"/>
+    <Row Type="TRAIT_CIVILIZATION_HUSSITE_WAR_WAGON" Kind="KIND_TRAIT"/>
+    <Row Type="LEADER_MATTHIAS_CORVINUS_CZECHIA" Kind="KIND_LEADER"/>
+  </Types>
+
+  <Civilizations>
+    <Row
+      CivilizationType="CIVILIZATION_CZECHIA"
+      Name="LOC_CIVILIZATION_CZECHIA_NAME"
+      Description="LOC_CIVILIZATION_CZECHIA_DESCRIPTION"
+      Adjective="LOC_CIVILIZATION_CZECHIA_ADJECTIVE"
+      StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV"
+      Ethnicity="ETHNICITY_EUROPEAN"/>
+  </Civilizations>
+
+  <Traits>
+    <Row
+      TraitType="TRAIT_CIVILIZATION_OSTSIEDLUNG"
+      Name="LOC_TRAIT_CIVILIZATION_OSTSIEDLUNG_NAME"
+      Description="LOC_TRAIT_CIVILIZATION_OSTSIEDLUNG_DESCRIPTION"/>
+
+    <Row
+      TraitType="TRAIT_CIVILIZATION_CZECH_BREWERY"
+      Name="LOC_IMPROVEMENT_CZECH_BREWERY_NAME"
+      Description="LOC_IMPROVEMENT_CZECH_BREWERY_DESCRIPTION"/>
+
+    <Row
+      TraitType="TRAIT_CIVILIZATION_HUSSITE_WAR_WAGON"
+      Name="LOC_UNIT_CZECH_HUSSITE_WAR_WAGON_NAME"
+      Description="LOC_UNIT_CZECH_HUSSITE_WAR_WAGON_DESCRIPTION"/>
+  </Traits>
+
+  <CivilizationTraits>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" TraitType="TRAIT_CIVILIZATION_OSTSIEDLUNG"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" TraitType="TRAIT_CIVILIZATION_CZECH_BREWERY"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" TraitType="TRAIT_CIVILIZATION_HUSSITE_WAR_WAGON"/>
+  </CivilizationTraits>
+
+  <Leaders>
+    <Row
+      LeaderType="LEADER_MATTHIAS_CORVINUS_CZECHIA"
+      Name="LOC_LEADER_MATTHIAS_CORVINUS_NAME"
+      InheritFrom="LEADER_MATTHIAS_CORVINUS"
+      SceneLayers="4"/>
+  </Leaders>
+
+  <LoadingInfo>
+    <Row
+      LeaderType="LEADER_MATTHIAS_CORVINUS_CZECHIA"
+      ForegroundImage="LEADER_MATTHIAS_CORVINUS_NEUTRAL"
+      BackgroundImage="LEADER_MATTHIAS_CORVINUS_BACKGROUND"/>
+  </LoadingInfo>
+
+  <DiplomacyInfo>
+    <Row
+      Type="LEADER_MATTHIAS_CORVINUS_CZECHIA"
+      BackgroundImage="LEADER_OTTOKAR_II_BACKGROUND"/>
+  </DiplomacyInfo>
+
+  <LeaderTraits>
+    <Row LeaderType="LEADER_MATTHIAS_CORVINUS_CZECHIA" TraitType="TRAIT_LEADER_RAVEN_KING"/>
+  </LeaderTraits>
+
+  <CivilizationLeaders>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" LeaderType="LEADER_OTTOKAR_II" CapitalName="LOC_CITY_PRAGUE_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" LeaderType="LEADER_MATTHIAS_CORVINUS_CZECHIA" CapitalName="LOC_CITY_PRAGUE_NAME"/>
+  </CivilizationLeaders>
+
+  <CityNames>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_PRAGUE_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_BRNO_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_OSTRAVA_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_PLZEN_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_OLOMOUC_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_LIBEREC_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_HRADEC_KRALOVE_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_CESKE_BUDEJOVICE_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_PARDUBICE_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_ZLIN_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_JIHLAVA_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_KARLOVY_VARY_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_TABOR_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_KUTNA_HORA_NAME"/>
+    <Row CivilizationType="CIVILIZATION_CZECHIA" CityName="LOC_CITY_ZNOJMO_NAME"/>
+  </CityNames>
+
+</GameInfo>

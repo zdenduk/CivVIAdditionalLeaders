@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+
+  <Types>
+    <Row Type="IMPROVEMENT_CZECH_BREWERY" Kind="KIND_IMPROVEMENT"/>
+  </Types>
+
+  <Improvements>
+    <Row
+      ImprovementType="IMPROVEMENT_CZECH_BREWERY"
+      Name="LOC_IMPROVEMENT_CZECH_BREWERY_NAME"
+      Description="LOC_IMPROVEMENT_CZECH_BREWERY_DESCRIPTION"
+      TraitType="TRAIT_CIVILIZATION_CZECH_BREWERY"
+      Icon="ICON_IMPROVEMENT_FARM"
+      PlunderType="PLUNDER_GOLD"
+      PlunderAmount="25"
+      Buildable="true"
+      PrereqCivic="CIVIC_GUILDS"
+      Housing="0.5"
+      SameAdjacentValid="true"/>
+  </Improvements>
+
+  <Improvement_ValidBuildUnits>
+    <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" UnitType="UNIT_BUILDER"/>
+  </Improvement_ValidBuildUnits>
+
+  <Improvement_ValidResources>
+    <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" ResourceType="RESOURCE_WHEAT" MustRemoveFeature="false"/>
+  </Improvement_ValidResources>
+
+  <Improvement_YieldChanges>
+    <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" YieldType="YIELD_GOLD" YieldChange="1"/>
+    <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" YieldType="YIELD_FOOD" YieldChange="1"/>
+  </Improvement_YieldChanges>
+
+  <ImprovementModifiers>
+    <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" ModifierId="CZECH_BREWERY_AMENITY"/>
+  </ImprovementModifiers>
+
+  <Modifiers>
+    <Row ModifierId="CZECH_BREWERY_AMENITY" ModifierType="MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_AMENITY"/>
+  </Modifiers>
+
+  <ModifierArguments>
+    <Row ModifierId="CZECH_BREWERY_AMENITY" Name="Amount" Value="1"/>
+  </ModifierArguments>
+
+  <Improvement_Adjacencies>
+    <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" YieldChangeId="CzechBrewery_HolySite_Faith"/>
+    <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" YieldChangeId="CzechBrewery_CommercialHub_Gold"/>
+    <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" YieldChangeId="CzechBrewery_Harbor_Gold"/>
+  </Improvement_Adjacencies>
+
+  <Adjacency_YieldChanges>
+    <Row ID="CzechBrewery_HolySite_Faith" Description="LOC_CZECH_BREWERY_HOLY_SITE_FAITH" YieldType="YIELD_FAITH" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_HOLY_SITE"/>
+    <Row ID="CzechBrewery_CommercialHub_Gold" Description="LOC_CZECH_BREWERY_COMMERCIAL_HUB_GOLD" YieldType="YIELD_GOLD" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_COMMERCIAL_HUB"/>
+    <Row ID="CzechBrewery_Harbor_Gold" Description="LOC_CZECH_BREWERY_HARBOR_GOLD" YieldType="YIELD_GOLD" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_HARBOR"/>
+  </Adjacency_YieldChanges>
+
+  <!-- This is the correct table on this Civ 6 build. -->
+  <Improvement_BonusYieldChanges>
+    <Row
+      Id="CzechBrewery_MassProduction_Food"
+      ImprovementType="IMPROVEMENT_CZECH_BREWERY"
+      YieldType="YIELD_FOOD"
+      BonusYieldChange="1"
+      PrereqTech="TECH_MASS_PRODUCTION"/>
+
+    <Row
+      Id="CzechBrewery_Chemistry_Gold"
+      ImprovementType="IMPROVEMENT_CZECH_BREWERY"
+      YieldType="YIELD_GOLD"
+      BonusYieldChange="2"
+      PrereqTech="TECH_CHEMISTRY"/>
+  </Improvement_BonusYieldChanges>
+
+</GameInfo>

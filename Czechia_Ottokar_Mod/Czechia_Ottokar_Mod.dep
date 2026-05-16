@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..GameDependencyData>
+	<ID>
+		<name text="Czechia_Ottokar_Mod"/>
+		<id text="9A4D2B0C-2F3A-4D67-9C7C-2B2F7E5A92A1"/>
+	</ID>
+	<RequiredGameArtIDs>
+		<Element>
+			<name text="Expansion1"/>
+			<id text="7446c8fe-29eb-44f8-801f-098f681cc5c5"/>
+		</Element>
+		<Element>
+			<name text="Expansion2"/>
+			<id text="b1b63999-6b16-4dd2-a5b6-eb19794aa8ca"/>
+		</Element>
+	</RequiredGameArtIDs>
+	<SystemDependencies>
+		<Element>
+			<ConsumerName text="Leaders"/>
+			<ArtDefDependencyPaths>
+				<Element text="Leaders.artdef"/>
+			</ArtDefDependencyPaths>
+			<LibraryDependencies>
+				<Element text="Leader"/>
+				<Element text="LeaderLighting"/>
+				<Element text="ColorKey"/>
+			</LibraryDependencies>
+			<LoadsLibraries>true</LoadsLibraries>
+		</Element>
+		<Element>
+			<ConsumerName text="LeaderFallback"/>
+			<ArtDefDependencyPaths>
+				<Element text="FallbackLeaders.artdef"/>
+			</ArtDefDependencyPaths>
+			<LibraryDependencies>
+				<Element text="LeaderFallback"/>
+			</LibraryDependencies>
+			<LoadsLibraries>true</LoadsLibraries>
+		</Element>
+		<Element>
+			<ConsumerName text="UI"/>
+			<ArtDefDependencyPaths/>
+			<LibraryDependencies>
+				<Element text="UITexture"/>
+			</LibraryDependencies>
+			<LoadsLibraries>true</LoadsLibraries>
+		</Element>
+	</SystemDependencies>
+	<ArtDefDependencies>
+		<Element>
+			<ArtDefPath text="Leaders.artdef"/>
+			<ArtDefDependencyPaths/>
+		</Element>
+		<Element>
+			<ArtDefPath text="FallbackLeaders.artdef"/>
+			<ArtDefDependencyPaths/>
+		</Element>
+	</ArtDefDependencies>
+	<LibraryDependencies>
+		<Element>
+			<LibraryName text="Leader"/>
+			<PackageDependencies>
+				<Element text="leaders/leader_matthias.blp"/>
+			</PackageDependencies>
+		</Element>
+		<Element>
+			<LibraryName text="LeaderLighting"/>
+			<PackageDependencies>
+				<Element text="leaders/light_rigs.blp"/>
+			</PackageDependencies>
+		</Element>
+		<Element>
+			<LibraryName text="ColorKey"/>
+			<PackageDependencies>
+				<Element text="ColorKeys.blp"/>
+			</PackageDependencies>
+		</Element>
+		<Element>
+			<LibraryName text="LeaderFallback"/>
+			<PackageDependencies>
+				<Element text="LeaderFallbacks.blp"/>
+			</PackageDependencies>
+		</Element>
+		<Element>
+			<LibraryName text="UITexture"/>
+			<PackageDependencies>
+				<Element text="UI/Icons.blp"/>
+				<Element text="UI/Leaders.blp"/>
+			</PackageDependencies>
+		</Element>
+	</LibraryDependencies>
+</AssetObjects..GameDependencyData>

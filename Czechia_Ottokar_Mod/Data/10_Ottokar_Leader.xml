@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+
+  <!-- ========================================================= -->
+  <!-- TYPES                                                     -->
+  <!-- ========================================================= -->
+
+  <Types>
+    <Row Type="LEADER_OTTOKAR_II" Kind="KIND_LEADER"/>
+    <Row Type="TRAIT_LEADER_IRON_AND_GOLDEN_KING" Kind="KIND_TRAIT"/>
+  </Types>
+
+
+  <!-- ========================================================= -->
+  <!-- LEADER                                                    -->
+  <!-- ========================================================= -->
+
+  <Leaders>
+    <Row
+      LeaderType="LEADER_OTTOKAR_II"
+      Name="LOC_LEADER_OTTOKAR_II_NAME"
+      InheritFrom="LEADER_DEFAULT"/>
+  </Leaders>
+
+
+  <!-- ========================================================= -->
+  <!-- LEADER TRAIT                                              -->
+  <!-- ========================================================= -->
+
+  <Traits>
+    <Row
+      TraitType="TRAIT_LEADER_IRON_AND_GOLDEN_KING"
+      Name="LOC_TRAIT_LEADER_IRON_AND_GOLDEN_KING_NAME"
+      Description="LOC_TRAIT_LEADER_IRON_AND_GOLDEN_KING_DESCRIPTION"/>
+  </Traits>
+
+  <LeaderTraits>
+    <Row
+      LeaderType="LEADER_OTTOKAR_II"
+      TraitType="TRAIT_LEADER_IRON_AND_GOLDEN_KING"/>
+  </LeaderTraits>
+
+
+  <!-- ========================================================= -->
+  <!-- ABILITY MODIFIERS                                         -->
+  <!-- ========================================================= -->
+
+  <TraitModifiers>
+    <Row
+      TraitType="TRAIT_LEADER_IRON_AND_GOLDEN_KING"
+      ModifierId="OTTOKAR_COMMERCIAL_HUB_PRODUCTION"/>
+
+    <Row
+      TraitType="TRAIT_LEADER_IRON_AND_GOLDEN_KING"
+      ModifierId="OTTOKAR_HEAVY_CAVALRY_PRODUCTION"/>
+  </TraitModifiers>
+
+
+  <Modifiers>
+    <!-- +30% Production toward Commercial Hubs -->
+    <Row
+      ModifierId="OTTOKAR_COMMERCIAL_HUB_PRODUCTION"
+      ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION"/>
+
+    <!-- +30% Production toward Heavy Cavalry units -->
+    <Row
+      ModifierId="OTTOKAR_HEAVY_CAVALRY_PRODUCTION"
+      ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_UNIT_PRODUCTION"/>
+  </Modifiers>
+
+
+  <ModifierArguments>
+    <!-- Commercial Hub production bonus -->
+    <Row
+      ModifierId="OTTOKAR_COMMERCIAL_HUB_PRODUCTION"
+      Name="DistrictType"
+      Value="DISTRICT_COMMERCIAL_HUB"/>
+
+    <Row
+      ModifierId="OTTOKAR_COMMERCIAL_HUB_PRODUCTION"
+      Name="Amount"
+      Value="30"/>
+
+
+    <!-- Heavy Cavalry production bonus -->
+    <Row
+      ModifierId="OTTOKAR_HEAVY_CAVALRY_PRODUCTION"
+      Name="PromotionClass"
+      Value="PROMOTION_CLASS_HEAVY_CAVALRY"/>
+
+    <Row
+      ModifierId="OTTOKAR_HEAVY_CAVALRY_PRODUCTION"
+      Name="Amount"
+      Value="30"/>
+  </ModifierArguments>
+
+</GameInfo>

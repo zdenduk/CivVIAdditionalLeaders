@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects::GameArtSpecification>
+	<id>
+		<name text="Czechia_Ottokar_Mod"/>
+		<id text="9A4D2B0C-2F3A-4D67-9C7C-2B2F7E5A92A1"/>
+	</id>
+	<artConsumers>
+		<Element>
+			<consumerName text="Leaders"/>
+			<relativeArtDefPaths>
+				<Element text="Leaders.artdef"/>
+			</relativeArtDefPaths>
+			<libraryDependencies>
+				<Element text="Leader"/>
+				<Element text="LeaderLighting"/>
+				<Element text="ColorKey"/>
+			</libraryDependencies>
+			<loadsLibraries>true</loadsLibraries>
+		</Element>
+		<Element>
+			<consumerName text="LeaderFallback"/>
+			<relativeArtDefPaths>
+				<Element text="FallbackLeaders.artdef"/>
+			</relativeArtDefPaths>
+			<libraryDependencies>
+				<Element text="LeaderFallback"/>
+			</libraryDependencies>
+			<loadsLibraries>true</loadsLibraries>
+		</Element>
+		<Element>
+			<consumerName text="UI"/>
+			<relativeArtDefPaths/>
+			<libraryDependencies>
+				<Element text="UITexture"/>
+			</libraryDependencies>
+			<loadsLibraries>true</loadsLibraries>
+		</Element>
+	</artConsumers>
+	<gameLibraries>
+		<Element>
+			<libraryName text="Leader"/>
+			<relativePackagePaths>
+				<Element text="leaders/leader_matthias"/>
+			</relativePackagePaths>
+		</Element>
+		<Element>
+			<libraryName text="LeaderLighting"/>
+			<relativePackagePaths>
+				<Element text="leaders/light_rigs"/>
+			</relativePackagePaths>
+		</Element>
+		<Element>
+			<libraryName text="ColorKey"/>
+			<relativePackagePaths>
+				<Element text="ColorKeys"/>
+			</relativePackagePaths>
+		</Element>
+		<Element>
+			<libraryName text="LeaderFallback"/>
+			<relativePackagePaths>
+				<Element text="LeaderFallbacks"/>
+			</relativePackagePaths>
+		</Element>
+		<Element>
+			<libraryName text="UITexture"/>
+			<relativePackagePaths>
+				<Element text="UI/Icons"/>
+				<Element text="UI/Leaders"/>
+			</relativePackagePaths>
+		</Element>
+	</gameLibraries>
+	<requiredGameArtIDs>
+		<Element>
+			<name text="Expansion1"/>
+			<id text="7446c8fe-29eb-44f8-801f-098f681cc5c5"/>
+		</Element>
+		<Element>
+			<name text="Expansion2"/>
+			<id text="b1b63999-6b16-4dd2-a5b6-eb19794aa8ca"/>
+		</Element>
+	</requiredGameArtIDs>
+</AssetObjects::GameArtSpecification>

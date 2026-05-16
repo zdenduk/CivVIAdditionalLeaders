@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <LocalizedText>
+
+    <Replace Tag="LOC_CIVILIZATION_CZECHIA_NAME" Language="en_US"><Text>Czechia</Text></Replace>
+    <Replace Tag="LOC_CIVILIZATION_CZECHIA_DESCRIPTION" Language="en_US"><Text>Czechia</Text></Replace>
+    <Replace Tag="LOC_CIVILIZATION_CZECHIA_ADJECTIVE" Language="en_US"><Text>Czech</Text></Replace>
+    <Replace Tag="LOC_TRAIT_CIVILIZATION_OSTSIEDLUNG_NAME" Language="en_US"><Text>Ostsiedlung</Text></Replace>
+    <Replace Tag="LOC_TRAIT_CIVILIZATION_OSTSIEDLUNG_DESCRIPTION" Language="en_US"><Text>Non-capital cities founded on Hills start with 3 [ICON_Citizen] Population. After unlocking the Nationalism civic, these cities receive -5 Loyalty per turn.</Text></Replace>
+    <Replace Tag="LOC_LEADER_OTTOKAR_II_NAME" Language="en_US"><Text>Ottokar II</Text></Replace>
+    <Replace Tag="LOC_TRAIT_LEADER_IRON_AND_GOLDEN_KING_NAME" Language="en_US"><Text>The Iron and Golden King</Text></Replace>
+    <Replace Tag="LOC_TRAIT_LEADER_IRON_AND_GOLDEN_KING_DESCRIPTION" Language="en_US"><Text>+30% [ICON_Production] Production toward Heavy Cavalry units and Commercial Hubs.</Text></Replace>
+    <Replace Tag="LOC_IMPROVEMENT_CZECH_BREWERY_NAME" Language="en_US"><Text>Brewery</Text></Replace>
+    <Replace Tag="LOC_IMPROVEMENT_CZECH_BREWERY_DESCRIPTION" Language="en_US"><Text>Unique Czech improvement unlocked with Guilds. Must be built on Wheat near Fresh Water. Provides +1 [ICON_Gold] Gold, +1 [ICON_Food] Food, +1 Amenity, and +0.5 Housing. Receives +1 [ICON_Faith] Faith for each adjacent Holy Site, and +1 [ICON_Gold] Gold for each adjacent Commercial Hub or Harbor. Receives +1 [ICON_Food] Food with Mass Production and +2 [ICON_Gold] Gold with Chemistry.</Text></Replace>
+    <Replace Tag="LOC_CZECH_BREWERY_HOLY_SITE_FAITH" Language="en_US"><Text>+{1_num} [ICON_Faith] Faith from the adjacent Holy Site.</Text></Replace>
+    <Replace Tag="LOC_CZECH_BREWERY_COMMERCIAL_HUB_GOLD" Language="en_US"><Text>+{1_num} [ICON_Gold] Gold from the adjacent Commercial Hub.</Text></Replace>
+    <Replace Tag="LOC_CZECH_BREWERY_HARBOR_GOLD" Language="en_US"><Text>+{1_num} [ICON_Gold] Gold from the adjacent Harbor.</Text></Replace>
+    <Replace Tag="LOC_UNIT_CZECH_HUSSITE_WAR_WAGON_NAME" Language="en_US"><Text>Hussite War Wagon</Text></Replace>
+    <Replace Tag="LOC_UNIT_CZECH_HUSSITE_WAR_WAGON_DESCRIPTION" Language="en_US"><Text>Czech unique ranged unit unlocked with the Reformed Church civic. Stronger than the Crossbowman but weaker than the Field Cannon. Has increased defensive Combat Strength and upgrades into the Field Cannon.</Text></Replace>
+    <Replace Tag="LOC_CITY_PRAGUE_NAME" Language="en_US"><Text>Prague</Text></Replace>
+    <Replace Tag="LOC_CITY_BRNO_NAME" Language="en_US"><Text>Brno</Text></Replace>
+    <Replace Tag="LOC_CITY_OSTRAVA_NAME" Language="en_US"><Text>Ostrava</Text></Replace>
+    <Replace Tag="LOC_CITY_PLZEN_NAME" Language="en_US"><Text>Plzeň</Text></Replace>
+    <Replace Tag="LOC_CITY_OLOMOUC_NAME" Language="en_US"><Text>Olomouc</Text></Replace>
+    <Replace Tag="LOC_CITY_LIBEREC_NAME" Language="en_US"><Text>Liberec</Text></Replace>
+    <Replace Tag="LOC_CITY_HRADEC_KRALOVE_NAME" Language="en_US"><Text>Hradec Králové</Text></Replace>
+    <Replace Tag="LOC_CITY_CESKE_BUDEJOVICE_NAME" Language="en_US"><Text>České Budějovice</Text></Replace>
+    <Replace Tag="LOC_CITY_PARDUBICE_NAME" Language="en_US"><Text>Pardubice</Text></Replace>
+    <Replace Tag="LOC_CITY_ZLIN_NAME" Language="en_US"><Text>Zlín</Text></Replace>
+    <Replace Tag="LOC_CITY_JIHLAVA_NAME" Language="en_US"><Text>Jihlava</Text></Replace>
+    <Replace Tag="LOC_CITY_KARLOVY_VARY_NAME" Language="en_US"><Text>Karlovy Vary</Text></Replace>
+    <Replace Tag="LOC_CITY_TABOR_NAME" Language="en_US"><Text>Tábor</Text></Replace>
+    <Replace Tag="LOC_CITY_KUTNA_HORA_NAME" Language="en_US"><Text>Kutná Hora</Text></Replace>
+    <Replace Tag="LOC_CITY_ZNOJMO_NAME" Language="en_US"><Text>Znojmo</Text></Replace>
+
+  </LocalizedText>
+</GameData>

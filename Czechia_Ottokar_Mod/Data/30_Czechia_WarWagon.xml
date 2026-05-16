@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+
+  <Types>
+    <Row Type="UNIT_CZECH_HUSSITE_WAR_WAGON" Kind="KIND_UNIT"/>
+  </Types>
+
+  <Units>
+    <Row
+      UnitType="UNIT_CZECH_HUSSITE_WAR_WAGON"
+      Name="LOC_UNIT_CZECH_HUSSITE_WAR_WAGON_NAME"
+      Description="LOC_UNIT_CZECH_HUSSITE_WAR_WAGON_DESCRIPTION"
+      TraitType="TRAIT_CIVILIZATION_HUSSITE_WAR_WAGON"
+      BaseSightRange="2"
+      BaseMoves="2"
+      Combat="45"
+      RangedCombat="50"
+      Range="2"
+      Cost="200"
+      AdvisorType="ADVISOR_CONQUEST"
+      Domain="DOMAIN_LAND"
+      FormationClass="FORMATION_CLASS_LAND_COMBAT"
+      PromotionClass="PROMOTION_CLASS_RANGED"
+      Maintenance="3"
+      PrereqCivic="CIVIC_REFORMED_CHURCH"
+      MandatoryObsoleteTech="TECH_BALLISTICS"
+      PurchaseYield="YIELD_GOLD"/>
+  </Units>
+
+  <UnitUpgrades>
+    <Row Unit="UNIT_CZECH_HUSSITE_WAR_WAGON" UpgradeUnit="UNIT_FIELD_CANNON"/>
+  </UnitUpgrades>
+
+  <UnitAiInfos>
+    <Row UnitType="UNIT_CZECH_HUSSITE_WAR_WAGON" AiType="UNITAI_COMBAT"/>
+    <Row UnitType="UNIT_CZECH_HUSSITE_WAR_WAGON" AiType="UNITTYPE_RANGED"/>
+    <Row UnitType="UNIT_CZECH_HUSSITE_WAR_WAGON" AiType="UNITTYPE_LAND_COMBAT"/>
+  </UnitAiInfos>
+
+  <TypeTags>
+    <Row Type="UNIT_CZECH_HUSSITE_WAR_WAGON" Tag="CLASS_RANGED"/>
+  </TypeTags>
+
+</GameInfo>
