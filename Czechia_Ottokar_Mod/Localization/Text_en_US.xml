@@ -33,5 +33,20 @@
     <Replace Tag="LOC_CITY_KUTNA_HORA_NAME" Language="en_US"><Text>Kutná Hora</Text></Replace>
     <Replace Tag="LOC_CITY_ZNOJMO_NAME" Language="en_US"><Text>Znojmo</Text></Replace>
 
+    <Replace Tag="LOC_CITY_OPAVA_NAME" Language="en_US"><Text>Opava</Text></Replace>
+    <Replace Tag="LOC_CITY_KROMERIZ_NAME" Language="en_US"><Text>Kromeriz</Text></Replace>
+    <Replace Tag="LOC_CITY_UHERSKE_HRADISTE_NAME" Language="en_US"><Text>Uherske Hradiste</Text></Replace>
+    <Replace Tag="LOC_CITY_PREROV_NAME" Language="en_US"><Text>Prerov</Text></Replace>
+    <Replace Tag="LOC_CITY_PROSTEJOV_NAME" Language="en_US"><Text>Prostejov</Text></Replace>
+    <Replace Tag="LOC_CITY_TREBIC_NAME" Language="en_US"><Text>Trebic</Text></Replace>
+    <Replace Tag="LOC_CITY_NOVY_JICIN_NAME" Language="en_US"><Text>Novy Jicin</Text></Replace>
+    <Replace Tag="LOC_CITY_FRYDEK_MISTEK_NAME" Language="en_US"><Text>Frydek-Mistek</Text></Replace>
+    <Replace Tag="LOC_CITY_KARVINA_NAME" Language="en_US"><Text>Karvina</Text></Replace>
+    <Replace Tag="LOC_CITY_TESIN_NAME" Language="en_US"><Text>Tesin</Text></Replace>
+    <Replace Tag="LOC_CITY_KRNOV_NAME" Language="en_US"><Text>Krnov</Text></Replace>
+    <Replace Tag="LOC_CITY_BRUNTAL_NAME" Language="en_US"><Text>Bruntal</Text></Replace>
+    <Replace Tag="LOC_CITY_HODONIN_NAME" Language="en_US"><Text>Hodonin</Text></Replace>
+    <Replace Tag="LOC_CITY_MIKULOV_NAME" Language="en_US"><Text>Mikulov</Text></Replace>
+
   </LocalizedText>
 </GameData>

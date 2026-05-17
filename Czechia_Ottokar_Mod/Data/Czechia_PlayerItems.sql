@@ -1,5 +1,6 @@
 DELETE FROM PlayerItems
 WHERE Domain = 'Players:Expansion2_Players'
+  AND CivilizationType = 'CIVILIZATION_CZECHIA'
   AND LeaderType IN ('LEADER_OTTOKAR_II', 'LEADER_MATTHIAS_CORVINUS_CZECHIA');
 
 INSERT OR REPLACE INTO PlayerItems

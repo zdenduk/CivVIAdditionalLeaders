@@ -61,6 +61,8 @@
     <File>Czechia_Ottokar_Mod.dep</File>
     <File>ArtDefs/Leaders.artdef</File>
     <File>ArtDefs/FallbackLeaders.artdef</File>
+    <File>ArtDefs/Improvements.artdef</File>
+    <File>ArtDefs/Landmarks.artdef</File>
     <File>Data/00_Czechia_Civilization.xml</File>
     <File>Data/05_Czechia_StartBias.xml</File>
     <File>Data/06_Czechia_Colors.xml</File>
@@ -73,6 +75,9 @@
     <File>Data/Czechia_PlayerItems.sql</File>
     <File>Localization/Text_en_US.xml</File>
     <File>Platforms/MacOS/BLPs/UI/Icons.blp</File>
+    <File>Platforms/Windows/BLPs/landmarks/czech_brewery_v2.blp</File>
+    <File>Platforms/Windows/BLPs/landmarks/czech_brewery_attached_hansa.blp</File>
+    <File>Platforms/Windows/BLPs/landmarks/czech_brewery_attached_hansa_lumber.blp</File>
     <File>Platforms/Windows/BLPs/UI/Icons.blp</File>
     <File>Scripts/Ostsiedlung.lua</File>
   </Files>

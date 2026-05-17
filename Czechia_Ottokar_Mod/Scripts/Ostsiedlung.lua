@@ -9,7 +9,8 @@ print("Ostsiedlung: Czechia Ostsiedlung script loaded.")
 local CZECHIA_CIVILIZATION = "CIVILIZATION_CZECHIA"
 local NATIONALISM_CIVIC = "CIVIC_NATIONALISM"
 local OSTSIEDLUNG_PROPERTY = "CZECHIA_OSTSIEDLUNG_CITY"
-local OSTSIEDLUNG_LAST_LOYALTY_TURN = "CZECHIA_OSTSIEDLUNG_LAST_LOYALTY_TURN"
+local OSTSIEDLUNG_LOYALTY_MODIFIER = "CZECHIA_OSTSIEDLUNG_NATIONALISM_LOYALTY"
+local OSTSIEDLUNG_LOYALTY_MODIFIER_ATTACHED = "CZECHIA_OSTSIEDLUNG_LOYALTY_MODIFIER_ATTACHED"
 
 function IsCzechiaPlayer(playerID)
   local playerConfig = PlayerConfigurations[playerID]
@@ -74,6 +75,28 @@ function RaiseCityToThreePopulation(city)
   end
 end
 
+function EnsureOstsiedlungLoyaltyModifier(playerID, city)
+  if city == nil or city:GetProperty(OSTSIEDLUNG_PROPERTY) ~= 1 then
+    return
+  end
+
+  if not PlayerHasNationalism(playerID) then
+    return
+  end
+
+  if city:GetProperty(OSTSIEDLUNG_LOYALTY_MODIFIER_ATTACHED) == 1 then
+    return
+  end
+
+  if city.AttachModifierByID ~= nil then
+    city:AttachModifierByID(OSTSIEDLUNG_LOYALTY_MODIFIER)
+    city:SetProperty(OSTSIEDLUNG_LOYALTY_MODIFIER_ATTACHED, 1)
+    print("Ostsiedlung: attached Nationalism loyalty modifier for player " .. tostring(playerID) .. ", city ID " .. tostring(city:GetID()))
+  else
+    print("Ostsiedlung error: no modifier attachment function was available.")
+  end
+end
+
 function OnCityInitialized(playerID, cityID, x, y)
   if not IsCzechiaPlayer(playerID) then
     return
@@ -98,12 +121,13 @@ function OnCityInitialized(playerID, cityID, x, y)
 
   city:SetProperty(OSTSIEDLUNG_PROPERTY, 1)
   RaiseCityToThreePopulation(city)
+  EnsureOstsiedlungLoyaltyModifier(playerID, city)
 
   print("Ostsiedlung: marked hill city for player " .. tostring(playerID) .. ", city ID " .. tostring(cityID))
 end
 
 function ApplyOstsiedlungLoyaltyPenalty(playerID)
-  if not IsCzechiaPlayer(playerID) or not PlayerHasNationalism(playerID) then
+  if not IsCzechiaPlayer(playerID) then
     return
   end
 
@@ -112,20 +136,8 @@ function ApplyOstsiedlungLoyaltyPenalty(playerID)
     return
   end
 
-  local currentTurn = Game.GetCurrentGameTurn()
-
   for _, city in player:GetCities():Members() do
-    if city:GetProperty(OSTSIEDLUNG_PROPERTY) == 1 then
-      local lastTurnApplied = city:GetProperty(OSTSIEDLUNG_LAST_LOYALTY_TURN)
-
-      if lastTurnApplied ~= currentTurn then
-        if city.ChangeLoyalty ~= nil then
-          city:ChangeLoyalty(-5)
-        end
-
-        city:SetProperty(OSTSIEDLUNG_LAST_LOYALTY_TURN, currentTurn)
-      end
-    end
+    EnsureOstsiedlungLoyaltyModifier(playerID, city)
   end
 end
 

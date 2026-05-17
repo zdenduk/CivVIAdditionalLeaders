@@ -28,6 +28,19 @@
 			<loadsLibraries>true</loadsLibraries>
 		</Element>
 		<Element>
+			<consumerName text="Landmarks"/>
+			<relativeArtDefPaths>
+				<Element text="Improvements.artdef"/>
+				<Element text="Landmarks.artdef"/>
+			</relativeArtDefPaths>
+			<libraryDependencies>
+				<Element text="TileBase"/>
+				<Element text="CityBuildings"/>
+				<Element text="StrategicView_Sprite"/>
+			</libraryDependencies>
+			<loadsLibraries>true</loadsLibraries>
+		</Element>
+		<Element>
 			<consumerName text="UI"/>
 			<relativeArtDefPaths/>
 			<libraryDependencies>
@@ -60,6 +73,22 @@
 			<relativePackagePaths>
 				<Element text="LeaderFallbacks"/>
 			</relativePackagePaths>
+		</Element>
+		<Element>
+			<libraryName text="TileBase"/>
+			<relativePackagePaths>
+				<Element text="landmarks/czech_brewery_v2"/>
+				<Element text="landmarks/czech_brewery_attached_hansa"/>
+				<Element text="landmarks/czech_brewery_attached_hansa_lumber"/>
+			</relativePackagePaths>
+		</Element>
+		<Element>
+			<libraryName text="CityBuildings"/>
+			<relativePackagePaths/>
+		</Element>
+		<Element>
+			<libraryName text="StrategicView_Sprite"/>
+			<relativePackagePaths/>
 		</Element>
 		<Element>
 			<libraryName text="UITexture"/>

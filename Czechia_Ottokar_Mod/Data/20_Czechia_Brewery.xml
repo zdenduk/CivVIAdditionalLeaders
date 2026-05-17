@@ -11,7 +11,7 @@
       Name="LOC_IMPROVEMENT_CZECH_BREWERY_NAME"
       Description="LOC_IMPROVEMENT_CZECH_BREWERY_DESCRIPTION"
       TraitType="TRAIT_CIVILIZATION_CZECH_BREWERY"
-      Icon="ICON_IMPROVEMENT_FARM"
+      Icon="ICON_IMPROVEMENT_CZECH_BREWERY"
       PlunderType="PLUNDER_GOLD"
       PlunderAmount="25"
       Buildable="true"

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..MaterialInstance>
+	<m_CookParams>
+		<m_Values>
+			<Element class="AssetObjects..ObjectValue">
+				<m_ObjectName text="Burn_BaseColor"/>
+				<m_eObjectType>TEXTURE</m_eObjectType>
+				<m_ParamName text="BurnMap"/>
+			</Element>
+			<Element class="AssetObjects..FloatValue">
+				<m_fValue>0.100000</m_fValue>
+				<m_ParamName text="GradientScale"/>
+			</Element>
+			<Element class="AssetObjects..IntValue">
+				<m_nValue>8</m_nValue>
+				<m_ParamName text="Octaves"/>
+			</Element>
+			<Element class="AssetObjects..FloatValue">
+				<m_fValue>4.000000</m_fValue>
+				<m_ParamName text="NoiseScale"/>
+			</Element>
+			<Element class="AssetObjects..FloatValue">
+				<m_fValue>1.000000</m_fValue>
+				<m_ParamName text="NoiseFrequency"/>
+			</Element>
+			<Element class="AssetObjects..ObjectValue">
+				<m_ObjectName text="Burn_G"/>
+				<m_eObjectType>TEXTURE</m_eObjectType>
+				<m_ParamName text="BurnGloss"/>
+			</Element>
+			<Element class="AssetObjects..ObjectValue">
+				<m_ObjectName text=""/>
+				<m_eObjectType>TEXTURE</m_eObjectType>
+				<m_ParamName text="BurnMetalness"/>
+			</Element>
+			<Element class="AssetObjects..FloatValue">
+				<m_fValue>0.500000</m_fValue>
+				<m_ParamName text="BurnGlossBlendFactor"/>
+			</Element>
+			<Element class="AssetObjects..FloatValue">
+				<m_fValue>0.100000</m_fValue>
+				<m_ParamName text="BurnMetalnessBlendFactor"/>
+			</Element>
+		</m_Values>
+	</m_CookParams>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>325</build>
+		<revision>908</revision>
+	</m_Version>
+	<m_ClassName text="BurnMaterial"/>
+	<m_DataFiles/>
+	<m_Name text="DefaultBurnMaterial"/>
+	<m_Description text="Default Burn Material used in the pillaged state"/>
+	<m_Tags>
+		<Element text="BurnMaterial"/>
+	</m_Tags>
+	<m_Groups/>
+</AssetObjects..MaterialInstance>
+

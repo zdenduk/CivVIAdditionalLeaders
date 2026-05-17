@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>423</build>
+		<revision>65</revision>
+	</m_Version>
+	<m_ClassName text="TileBase"/>
+	<m_PackageName text="landmarks/czech_brewery_attached_hansa"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="IMP_Czech_Brewery_AttachedHansa"/>
+			<m_ObjectName text="Brew_AttachedHansa"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_PRD_Pile"/>
+			<m_ObjectName text="DIS_PRD_Pile"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_PRD_Red_Barrel"/>
+			<m_ObjectName text="DIS_PRD_Red_Barrel"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_PRD_Metal_Barrel"/>
+			<m_ObjectName text="DIS_PRD_Metal_Barrel"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_PRD_HansaFiller_LgB"/>
+			<m_ObjectName text="DIS_PRD_HansaFiller_LgB"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_PRD_HansaFiller_LgC"/>
+			<m_ObjectName text="DIS_PRD_HansaFiller_LgC"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_PRD_HansaFiller_SmC"/>
+			<m_ObjectName text="DIS_PRD_HansaFiller_SmC"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>

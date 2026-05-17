@@ -68,13 +68,38 @@
     <Row Name="ICON_ATLAS_CZECH_HUSSITE_WAR_WAGON" IconSize="20" IconsPerRow="1" IconsPerColumn="1" Filename="HussiteWarWagonIcon20.dds" />
     <Row Name="ICON_ATLAS_CZECH_HUSSITE_WAR_WAGON" IconSize="18" IconsPerRow="1" IconsPerColumn="1" Filename="HussiteWarWagonIcon18.dds" />
     <Row Name="ICON_ATLAS_CZECH_HUSSITE_WAR_WAGON" IconSize="16" IconsPerRow="1" IconsPerColumn="1" Filename="HussiteWarWagonIcon16.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon256.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="200" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon200.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="128" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon128.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="95" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon95.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="80" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon80.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="70" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon70.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="64" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon64.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="55" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon55.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="50" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon50.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="48" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon48.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="45" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon45.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="44" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon44.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="40" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon40.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="38" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon38.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="36" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon36.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="32" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon32.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="30" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon30.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="24" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon24.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="22" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon22.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="20" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon20.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="18" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon18.dds" />
+    <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="16" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon16.dds" />
   </IconTextureAtlases>
   <IconDefinitions>
     <Row Name="ICON_CIVILIZATION_CZECHIA" Atlas="ICON_ATLAS_CZECHIA_CIV" Index="0" />
     <Row Name="ICON_LEADER_OTTOKAR_II" Atlas="ICON_ATLAS_OTTOKAR_LEADER" Index="0" />
-    <Row Name="ICON_IMPROVEMENT_CZECH_BREWERY" Atlas="ICON_ATLAS_CZECHIA_CIV" Index="0" />
+    <Row Name="ICON_IMPROVEMENT_CZECH_BREWERY" Atlas="ICON_ATLAS_CZECH_BREWERY" Index="0" />
     <Row Name="ICON_UNIT_CZECH_HUSSITE_WAR_WAGON" Atlas="ICON_ATLAS_CZECH_HUSSITE_WAR_WAGON" Index="0" />
     <Row Name="ICON_UNIT_CZECH_HUSSITE_WAR_WAGON_PORTRAIT" Atlas="ICON_ATLAS_CZECH_HUSSITE_WAR_WAGON" Index="0" />
   </IconDefinitions>
+  <IconAliases>
+    <Row Name="ICON_LEADER_MATTHIAS_CORVINUS_CZECHIA" OtherName="ICON_LEADER_MATTHIAS_CORVINUS" />
+  </IconAliases>
 </GameInfo>
 
