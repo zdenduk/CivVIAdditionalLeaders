@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameInfo>
 
-  <!-- Czechia-specific Matthias uses Raven King. This extra link is harmless if the Black Army
-       is already enabled by TRAIT_LEADER_RAVEN_KING, and useful if the frontend/gameplay gating
-       needs the clone leader to be explicitly associated with the unit. -->
-
-  <LeaderTraits>
-    <Replace LeaderType="LEADER_MATTHIAS_CORVINUS_CZECHIA" TraitType="TRAIT_LEADER_RAVEN_KING"/>
-  </LeaderTraits>
+  <!-- Czechia-specific Matthias inherits Raven King from LEADER_MATTHIAS_CORVINUS.
+       Do not add TRAIT_LEADER_RAVEN_KING here as a second explicit LeaderTraits row:
+       the loading screen lists inherited and explicit copies separately. Black Army
+       frontend visibility is handled by Czechia_PlayerItems.sql. -->
 
 </GameInfo>

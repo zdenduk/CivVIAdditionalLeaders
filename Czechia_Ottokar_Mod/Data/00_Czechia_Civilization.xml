@@ -75,10 +75,6 @@
       BackgroundImage="LEADER_OTTOKAR_II_BACKGROUND"/>
   </DiplomacyInfo>
 
-  <LeaderTraits>
-    <Row LeaderType="LEADER_MATTHIAS_CORVINUS_CZECHIA" TraitType="TRAIT_LEADER_RAVEN_KING"/>
-  </LeaderTraits>
-
   <CivilizationLeaders>
     <Row CivilizationType="CIVILIZATION_CZECHIA" LeaderType="LEADER_OTTOKAR_II" CapitalName="LOC_CITY_PRAGUE_NAME"/>
     <Row CivilizationType="CIVILIZATION_CZECHIA" LeaderType="LEADER_MATTHIAS_CORVINUS_CZECHIA" CapitalName="LOC_CITY_BRNO_NAME"/>
