@@ -1,6 +1,7 @@
 -- ===========================================================================
 -- Czechia: Ostsiedlung
--- Non-capital cities founded on hills start with 3 Population.
+-- Non-capital cities founded on hills start with 2 Population.
+-- Until Nationalism, those cities receive 1 Culture per turn.
 -- After unlocking Nationalism, those cities lose 5 Loyalty per turn.
 -- ===========================================================================
 
@@ -9,6 +10,8 @@ print("Ostsiedlung: Czechia Ostsiedlung script loaded.")
 local CZECHIA_CIVILIZATION = "CIVILIZATION_CZECHIA"
 local NATIONALISM_CIVIC = "CIVIC_NATIONALISM"
 local OSTSIEDLUNG_PROPERTY = "CZECHIA_OSTSIEDLUNG_CITY"
+local OSTSIEDLUNG_CULTURE_MODIFIER = "CZECHIA_OSTSIEDLUNG_PRE_NATIONALISM_CULTURE"
+local OSTSIEDLUNG_CULTURE_MODIFIER_ATTACHED = "CZECHIA_OSTSIEDLUNG_CULTURE_MODIFIER_ATTACHED"
 local OSTSIEDLUNG_LOYALTY_MODIFIER = "CZECHIA_OSTSIEDLUNG_NATIONALISM_LOYALTY"
 local OSTSIEDLUNG_LOYALTY_MODIFIER_ATTACHED = "CZECHIA_OSTSIEDLUNG_LOYALTY_MODIFIER_ATTACHED"
 
@@ -55,12 +58,12 @@ function IsHillCity(city)
   return plot:IsHills()
 end
 
-function RaiseCityToThreePopulation(city)
+function RaiseCityToTwoPopulation(city)
   if city == nil then
     return
   end
 
-  local amountToAdd = 3 - city:GetPopulation()
+  local amountToAdd = 2 - city:GetPopulation()
 
   if amountToAdd <= 0 then
     return
@@ -97,6 +100,24 @@ function EnsureOstsiedlungLoyaltyModifier(playerID, city)
   end
 end
 
+function EnsureOstsiedlungCultureModifier(playerID, city)
+  if city == nil or city:GetProperty(OSTSIEDLUNG_PROPERTY) ~= 1 then
+    return
+  end
+
+  if city:GetProperty(OSTSIEDLUNG_CULTURE_MODIFIER_ATTACHED) == 1 then
+    return
+  end
+
+  if city.AttachModifierByID ~= nil then
+    city:AttachModifierByID(OSTSIEDLUNG_CULTURE_MODIFIER)
+    city:SetProperty(OSTSIEDLUNG_CULTURE_MODIFIER_ATTACHED, 1)
+    print("Ostsiedlung: attached pre-Nationalism culture modifier for player " .. tostring(playerID) .. ", city ID " .. tostring(city:GetID()))
+  else
+    print("Ostsiedlung error: no modifier attachment function was available.")
+  end
+end
+
 function OnCityInitialized(playerID, cityID, x, y)
   if not IsCzechiaPlayer(playerID) then
     return
@@ -120,7 +141,8 @@ function OnCityInitialized(playerID, cityID, x, y)
   end
 
   city:SetProperty(OSTSIEDLUNG_PROPERTY, 1)
-  RaiseCityToThreePopulation(city)
+  RaiseCityToTwoPopulation(city)
+  EnsureOstsiedlungCultureModifier(playerID, city)
   EnsureOstsiedlungLoyaltyModifier(playerID, city)
 
   print("Ostsiedlung: marked hill city for player " .. tostring(playerID) .. ", city ID " .. tostring(cityID))
@@ -137,6 +159,7 @@ function ApplyOstsiedlungLoyaltyPenalty(playerID)
   end
 
   for _, city in player:GetCities():Members() do
+    EnsureOstsiedlungCultureModifier(playerID, city)
     EnsureOstsiedlungLoyaltyModifier(playerID, city)
   end
 end

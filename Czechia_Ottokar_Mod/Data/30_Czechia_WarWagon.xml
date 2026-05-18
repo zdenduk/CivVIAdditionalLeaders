@@ -3,7 +3,12 @@
 
   <Types>
     <Row Type="UNIT_CZECH_HUSSITE_WAR_WAGON" Kind="KIND_UNIT"/>
+    <Row Type="ABILITY_CZECH_HUSSITE_WAR_WAGON_WAGENBURG" Kind="KIND_ABILITY"/>
   </Types>
+
+  <Tags>
+    <Row Tag="CLASS_CZECH_HUSSITE_WAR_WAGON" Vocabulary="ABILITY_CLASS"/>
+  </Tags>
 
   <Units>
     <Row
@@ -14,7 +19,7 @@
       BaseSightRange="2"
       BaseMoves="2"
       Combat="45"
-      RangedCombat="50"
+      RangedCombat="45"
       Range="2"
       Cost="200"
       AdvisorType="ADVISOR_CONQUEST"
@@ -39,6 +44,106 @@
 
   <TypeTags>
     <Row Type="UNIT_CZECH_HUSSITE_WAR_WAGON" Tag="CLASS_RANGED"/>
+    <Row Type="UNIT_CZECH_HUSSITE_WAR_WAGON" Tag="CLASS_CZECH_HUSSITE_WAR_WAGON"/>
+    <Row Type="ABILITY_CZECH_HUSSITE_WAR_WAGON_WAGENBURG" Tag="CLASS_CZECH_HUSSITE_WAR_WAGON"/>
   </TypeTags>
+
+  <UnitAbilities>
+    <Row
+      UnitAbilityType="ABILITY_CZECH_HUSSITE_WAR_WAGON_WAGENBURG"
+      Name="LOC_ABILITY_CZECH_HUSSITE_WAR_WAGON_WAGENBURG_NAME"
+      Description="LOC_ABILITY_CZECH_HUSSITE_WAR_WAGON_WAGENBURG_DESCRIPTION"/>
+  </UnitAbilities>
+
+  <UnitAbilityModifiers>
+    <Row UnitAbilityType="ABILITY_CZECH_HUSSITE_WAR_WAGON_WAGENBURG" ModifierId="CZECH_HUSSITE_WAR_WAGON_DEFENSE_STRENGTH"/>
+    <Row UnitAbilityType="ABILITY_CZECH_HUSSITE_WAR_WAGON_WAGENBURG" ModifierId="CZECH_HUSSITE_WAR_WAGON_ADJACENCY_STRENGTH"/>
+  </UnitAbilityModifiers>
+
+  <Modifiers>
+    <Row
+      ModifierId="CZECH_HUSSITE_WAR_WAGON_DEFENSE_STRENGTH"
+      ModifierType="MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH"
+      SubjectRequirementSetId="CZECH_HUSSITE_WAR_WAGON_FORTIFIED_DEFENDING_REQUIREMENTS"/>
+
+    <Row
+      ModifierId="CZECH_HUSSITE_WAR_WAGON_ADJACENCY_STRENGTH"
+      ModifierType="GRANT_STRENGTH_PER_ADJACENT_UNIT_TYPE"
+      OwnerRequirementSetId="CZECH_HUSSITE_WAR_WAGON_DEFENDING_ADJACENT_REQUIREMENTS"/>
+  </Modifiers>
+
+  <ModifierArguments>
+    <Row ModifierId="CZECH_HUSSITE_WAR_WAGON_DEFENSE_STRENGTH" Name="Amount" Value="10"/>
+    <Row ModifierId="CZECH_HUSSITE_WAR_WAGON_ADJACENCY_STRENGTH" Name="Amount" Value="3"/>
+    <Row ModifierId="CZECH_HUSSITE_WAR_WAGON_ADJACENCY_STRENGTH" Name="UnitType" Value="UNIT_CZECH_HUSSITE_WAR_WAGON"/>
+  </ModifierArguments>
+
+  <RequirementSets>
+    <Row
+      RequirementSetId="CZECH_HUSSITE_WAR_WAGON_DEFENDING_REQUIREMENTS"
+      RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+
+    <Row
+      RequirementSetId="CZECH_HUSSITE_WAR_WAGON_FORTIFIED_DEFENDING_REQUIREMENTS"
+      RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+
+    <Row
+      RequirementSetId="CZECH_HUSSITE_WAR_WAGON_DEFENDING_ADJACENT_REQUIREMENTS"
+      RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+  </RequirementSets>
+
+  <RequirementSetRequirements>
+    <Row
+      RequirementSetId="CZECH_HUSSITE_WAR_WAGON_DEFENDING_REQUIREMENTS"
+      RequirementId="PLAYER_IS_DEFENDER_REQUIREMENTS"/>
+
+    <Row
+      RequirementSetId="CZECH_HUSSITE_WAR_WAGON_FORTIFIED_DEFENDING_REQUIREMENTS"
+      RequirementId="PLAYER_IS_DEFENDER_REQUIREMENTS"/>
+
+    <Row
+      RequirementSetId="CZECH_HUSSITE_WAR_WAGON_FORTIFIED_DEFENDING_REQUIREMENTS"
+      RequirementId="REQUIRES_CZECH_HUSSITE_WAR_WAGON_FORTIFIED_PLOT"/>
+
+    <Row
+      RequirementSetId="CZECH_HUSSITE_WAR_WAGON_DEFENDING_ADJACENT_REQUIREMENTS"
+      RequirementId="PLAYER_IS_DEFENDER_REQUIREMENTS"/>
+
+    <Row
+      RequirementSetId="CZECH_HUSSITE_WAR_WAGON_DEFENDING_ADJACENT_REQUIREMENTS"
+      RequirementId="REQUIRES_CZECH_HUSSITE_WAR_WAGON_ADJACENT_WAR_WAGON"/>
+  </RequirementSetRequirements>
+
+  <Requirements>
+    <Row
+      RequirementId="REQUIRES_CZECH_HUSSITE_WAR_WAGON_FORTIFIED_PLOT"
+      RequirementType="REQUIREMENT_PLOT_PROPERTY_MATCHES"/>
+
+    <Row
+      RequirementId="REQUIRES_CZECH_HUSSITE_WAR_WAGON_ADJACENT_WAR_WAGON"
+      RequirementType="REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES"/>
+  </Requirements>
+
+  <RequirementArguments>
+    <Row
+      RequirementId="REQUIRES_CZECH_HUSSITE_WAR_WAGON_FORTIFIED_PLOT"
+      Name="PropertyName"
+      Value="CZECH_HUSSITE_WAR_WAGON_FORTIFIED"/>
+
+    <Row
+      RequirementId="REQUIRES_CZECH_HUSSITE_WAR_WAGON_FORTIFIED_PLOT"
+      Name="PropertyMinimum"
+      Value="1"/>
+
+    <Row
+      RequirementId="REQUIRES_CZECH_HUSSITE_WAR_WAGON_ADJACENT_WAR_WAGON"
+      Name="UnitType"
+      Value="UNIT_CZECH_HUSSITE_WAR_WAGON"/>
+  </RequirementArguments>
+
+  <ModifierStrings>
+    <Row ModifierId="CZECH_HUSSITE_WAR_WAGON_DEFENSE_STRENGTH" Context="Preview" Text="LOC_ABILITY_CZECH_HUSSITE_WAR_WAGON_DEFENSE_STRENGTH_DESCRIPTION"/>
+    <Row ModifierId="CZECH_HUSSITE_WAR_WAGON_ADJACENCY_STRENGTH" Context="Preview" Text="LOC_ABILITY_CZECH_HUSSITE_WAR_WAGON_ADJACENCY_STRENGTH_DESCRIPTION"/>
+  </ModifierStrings>
 
 </GameInfo>

@@ -12,6 +12,7 @@ This repository currently contains `Czechia_Ottokar_Mod`, a Civilization VI mod 
 - **Civilization ability:** Ostsiedlung
 - **Unique improvement:** Brewery
 - **Unique unit:** Hussite War Wagon
+- **Unique luxury resource:** Beer
 
 ## Czechia
 
@@ -40,6 +41,7 @@ It must be built by a Builder on Wheat near Fresh Water and provides:
 - 1 Beer, a unique Luxury resource
 - +1 Faith for each adjacent Holy Site
 - +1 Gold for each adjacent Commercial Hub or Harbor
+- +1 Food from every 2 adjacent Farms
 - +1 Food after Mass Production
 - +2 Gold after Chemistry
 
@@ -47,7 +49,7 @@ It must be built by a Builder on Wheat near Fresh Water and provides:
 
 The Hussite War Wagon is a Czech unique ranged unit unlocked with the Reformed Church civic.
 
-It is stronger than the Crossbowman, weaker than the Field Cannon, has increased defensive Combat Strength, and upgrades into the Field Cannon.
+It has 45 Combat Strength and 45 Ranged Combat Strength, gains +10 Combat Strength when defending while fortified, gains an additional +3 Combat Strength for each adjacent Hussite War Wagon when defending, and upgrades into the Field Cannon.
 
 ## Matthias Corvinus for Czechia
 

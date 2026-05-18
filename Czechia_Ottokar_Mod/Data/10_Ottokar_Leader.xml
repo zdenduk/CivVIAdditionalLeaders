@@ -48,7 +48,15 @@
   <TraitModifiers>
     <Row
       TraitType="TRAIT_LEADER_IRON_AND_GOLDEN_KING"
-      ModifierId="OTTOKAR_COMMERCIAL_HUB_PRODUCTION"/>
+      ModifierId="OTTOKAR_BONUS_RESOURCE_MINE_GOLD"/>
+
+    <Row
+      TraitType="TRAIT_LEADER_IRON_AND_GOLDEN_KING"
+      ModifierId="OTTOKAR_LUXURY_RESOURCE_MINE_GOLD"/>
+
+    <Row
+      TraitType="TRAIT_LEADER_IRON_AND_GOLDEN_KING"
+      ModifierId="OTTOKAR_STRATEGIC_RESOURCE_MINE_GOLD"/>
 
     <Row
       TraitType="TRAIT_LEADER_IRON_AND_GOLDEN_KING"
@@ -57,10 +65,21 @@
 
 
   <Modifiers>
-    <!-- +30% Production toward Commercial Hubs -->
+    <!-- +1 Gold from Mines over resources -->
     <Row
-      ModifierId="OTTOKAR_COMMERCIAL_HUB_PRODUCTION"
-      ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION"/>
+      ModifierId="OTTOKAR_BONUS_RESOURCE_MINE_GOLD"
+      ModifierType="MODIFIER_PLAYER_ADJUST_PLOT_YIELD"
+      SubjectRequirementSetId="OTTOKAR_PLOT_HAS_MINE_ON_BONUS_RESOURCE_REQUIREMENTS"/>
+
+    <Row
+      ModifierId="OTTOKAR_LUXURY_RESOURCE_MINE_GOLD"
+      ModifierType="MODIFIER_PLAYER_ADJUST_PLOT_YIELD"
+      SubjectRequirementSetId="OTTOKAR_PLOT_HAS_MINE_ON_LUXURY_RESOURCE_REQUIREMENTS"/>
+
+    <Row
+      ModifierId="OTTOKAR_STRATEGIC_RESOURCE_MINE_GOLD"
+      ModifierType="MODIFIER_PLAYER_ADJUST_PLOT_YIELD"
+      SubjectRequirementSetId="OTTOKAR_PLOT_HAS_MINE_ON_STRATEGIC_RESOURCE_REQUIREMENTS"/>
 
     <!-- +30% Production toward Heavy Cavalry units -->
     <Row
@@ -70,16 +89,36 @@
 
 
   <ModifierArguments>
-    <!-- Commercial Hub production bonus -->
+    <!-- Resource Mine Gold -->
     <Row
-      ModifierId="OTTOKAR_COMMERCIAL_HUB_PRODUCTION"
-      Name="DistrictType"
-      Value="DISTRICT_COMMERCIAL_HUB"/>
+      ModifierId="OTTOKAR_BONUS_RESOURCE_MINE_GOLD"
+      Name="YieldType"
+      Value="YIELD_GOLD"/>
 
     <Row
-      ModifierId="OTTOKAR_COMMERCIAL_HUB_PRODUCTION"
+      ModifierId="OTTOKAR_BONUS_RESOURCE_MINE_GOLD"
       Name="Amount"
-      Value="30"/>
+      Value="1"/>
+
+    <Row
+      ModifierId="OTTOKAR_LUXURY_RESOURCE_MINE_GOLD"
+      Name="YieldType"
+      Value="YIELD_GOLD"/>
+
+    <Row
+      ModifierId="OTTOKAR_LUXURY_RESOURCE_MINE_GOLD"
+      Name="Amount"
+      Value="1"/>
+
+    <Row
+      ModifierId="OTTOKAR_STRATEGIC_RESOURCE_MINE_GOLD"
+      Name="YieldType"
+      Value="YIELD_GOLD"/>
+
+    <Row
+      ModifierId="OTTOKAR_STRATEGIC_RESOURCE_MINE_GOLD"
+      Name="Amount"
+      Value="1"/>
 
 
     <!-- Heavy Cavalry production bonus -->
@@ -93,5 +132,85 @@
       Name="Amount"
       Value="30"/>
   </ModifierArguments>
+
+  <RequirementSets>
+    <Row
+      RequirementSetId="OTTOKAR_PLOT_HAS_MINE_ON_BONUS_RESOURCE_REQUIREMENTS"
+      RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+
+    <Row
+      RequirementSetId="OTTOKAR_PLOT_HAS_MINE_ON_LUXURY_RESOURCE_REQUIREMENTS"
+      RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+
+    <Row
+      RequirementSetId="OTTOKAR_PLOT_HAS_MINE_ON_STRATEGIC_RESOURCE_REQUIREMENTS"
+      RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+  </RequirementSets>
+
+  <RequirementSetRequirements>
+    <Row
+      RequirementSetId="OTTOKAR_PLOT_HAS_MINE_ON_BONUS_RESOURCE_REQUIREMENTS"
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_MINE"/>
+
+    <Row
+      RequirementSetId="OTTOKAR_PLOT_HAS_MINE_ON_BONUS_RESOURCE_REQUIREMENTS"
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_BONUS_RESOURCE"/>
+
+    <Row
+      RequirementSetId="OTTOKAR_PLOT_HAS_MINE_ON_LUXURY_RESOURCE_REQUIREMENTS"
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_MINE"/>
+
+    <Row
+      RequirementSetId="OTTOKAR_PLOT_HAS_MINE_ON_LUXURY_RESOURCE_REQUIREMENTS"
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_LUXURY_RESOURCE"/>
+
+    <Row
+      RequirementSetId="OTTOKAR_PLOT_HAS_MINE_ON_STRATEGIC_RESOURCE_REQUIREMENTS"
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_MINE"/>
+
+    <Row
+      RequirementSetId="OTTOKAR_PLOT_HAS_MINE_ON_STRATEGIC_RESOURCE_REQUIREMENTS"
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_STRATEGIC_RESOURCE"/>
+  </RequirementSetRequirements>
+
+  <Requirements>
+    <Row
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_MINE"
+      RequirementType="REQUIREMENT_PLOT_IMPROVEMENT_TYPE_MATCHES"/>
+
+    <Row
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_BONUS_RESOURCE"
+      RequirementType="REQUIREMENT_PLOT_RESOURCE_CLASS_TYPE_MATCHES"/>
+
+    <Row
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_LUXURY_RESOURCE"
+      RequirementType="REQUIREMENT_PLOT_RESOURCE_CLASS_TYPE_MATCHES"/>
+
+    <Row
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_STRATEGIC_RESOURCE"
+      RequirementType="REQUIREMENT_PLOT_RESOURCE_CLASS_TYPE_MATCHES"/>
+  </Requirements>
+
+  <RequirementArguments>
+    <Row
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_MINE"
+      Name="ImprovementType"
+      Value="IMPROVEMENT_MINE"/>
+
+    <Row
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_BONUS_RESOURCE"
+      Name="ResourceClassType"
+      Value="RESOURCECLASS_BONUS"/>
+
+    <Row
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_LUXURY_RESOURCE"
+      Name="ResourceClassType"
+      Value="RESOURCECLASS_LUXURY"/>
+
+    <Row
+      RequirementId="REQUIRES_OTTOKAR_PLOT_HAS_STRATEGIC_RESOURCE"
+      Name="ResourceClassType"
+      Value="RESOURCECLASS_STRATEGIC"/>
+  </RequirementArguments>
 
 </GameInfo>

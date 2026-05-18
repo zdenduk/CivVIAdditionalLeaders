@@ -90,11 +90,19 @@
     <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="20" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon20.dds" />
     <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="18" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon18.dds" />
     <Row Name="ICON_ATLAS_CZECH_BREWERY" IconSize="16" IconsPerRow="1" IconsPerColumn="1" Filename="CzechBreweryIcon16.dds" />
+    <Row Name="ICON_ATLAS_RESOURCE_BEER" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="BeerResourceIcon256.dds" />
+    <Row Name="ICON_ATLAS_RESOURCE_BEER" IconSize="64" IconsPerRow="1" IconsPerColumn="1" Filename="BeerResourceIcon64.dds" />
+    <Row Name="ICON_ATLAS_RESOURCE_BEER" IconSize="50" IconsPerRow="1" IconsPerColumn="1" Filename="BeerResourceIcon50.dds" />
+    <Row Name="ICON_ATLAS_RESOURCE_BEER" IconSize="38" IconsPerRow="1" IconsPerColumn="1" Filename="BeerResourceIcon38.dds" />
+    <Row Name="ICON_ATLAS_RESOURCE_BEER" IconSize="32" IconsPerRow="1" IconsPerColumn="1" Filename="BeerResourceIcon32.dds" />
+    <Row Name="ICON_ATLAS_RESOURCE_BEER_FONT" Baseline="6" IconSize="22" IconsPerRow="1" IconsPerColumn="1" Filename="BeerResourceIcon22.dds" />
   </IconTextureAtlases>
   <IconDefinitions>
     <Row Name="ICON_CIVILIZATION_CZECHIA" Atlas="ICON_ATLAS_CZECHIA_CIV" Index="0" />
     <Row Name="ICON_LEADER_OTTOKAR_II" Atlas="ICON_ATLAS_OTTOKAR_LEADER" Index="0" />
     <Row Name="ICON_IMPROVEMENT_CZECH_BREWERY" Atlas="ICON_ATLAS_CZECH_BREWERY" Index="0" />
+    <Row Name="ICON_RESOURCE_BEER" Atlas="ICON_ATLAS_RESOURCE_BEER" Index="0" />
+    <Row Name="RESOURCE_BEER" Atlas="ICON_ATLAS_RESOURCE_BEER_FONT" Index="0" />
     <Row Name="ICON_UNIT_CZECH_HUSSITE_WAR_WAGON" Atlas="ICON_ATLAS_CZECH_HUSSITE_WAR_WAGON" Index="0" />
     <Row Name="ICON_UNIT_CZECH_HUSSITE_WAR_WAGON_PORTRAIT" Atlas="ICON_ATLAS_CZECH_HUSSITE_WAR_WAGON" Index="0" />
   </IconDefinitions>

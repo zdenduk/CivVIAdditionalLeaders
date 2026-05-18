@@ -6,17 +6,23 @@
     <Replace Tag="LOC_CIVILIZATION_CZECHIA_DESCRIPTION" Language="en_US"><Text>Czechia</Text></Replace>
     <Replace Tag="LOC_CIVILIZATION_CZECHIA_ADJECTIVE" Language="en_US"><Text>Czech</Text></Replace>
     <Replace Tag="LOC_TRAIT_CIVILIZATION_OSTSIEDLUNG_NAME" Language="en_US"><Text>Ostsiedlung</Text></Replace>
-    <Replace Tag="LOC_TRAIT_CIVILIZATION_OSTSIEDLUNG_DESCRIPTION" Language="en_US"><Text>Non-capital cities founded on Hills start with 3 [ICON_Citizen] Population. After unlocking the Nationalism civic, these cities receive -5 Loyalty per turn.</Text></Replace>
+    <Replace Tag="LOC_TRAIT_CIVILIZATION_OSTSIEDLUNG_DESCRIPTION" Language="en_US"><Text>Non-capital cities founded on Hills start with 2 [ICON_Citizen] Population and receive +1 [ICON_Culture] Culture until unlocking the Nationalism civic. After unlocking Nationalism, these cities receive -5 Loyalty per turn.</Text></Replace>
     <Replace Tag="LOC_LEADER_OTTOKAR_II_NAME" Language="en_US"><Text>Ottokar II</Text></Replace>
     <Replace Tag="LOC_TRAIT_LEADER_IRON_AND_GOLDEN_KING_NAME" Language="en_US"><Text>The Iron and Golden King</Text></Replace>
-    <Replace Tag="LOC_TRAIT_LEADER_IRON_AND_GOLDEN_KING_DESCRIPTION" Language="en_US"><Text>+30% [ICON_Production] Production toward Heavy Cavalry units and Commercial Hubs.</Text></Replace>
+    <Replace Tag="LOC_TRAIT_LEADER_IRON_AND_GOLDEN_KING_DESCRIPTION" Language="en_US"><Text>+30% [ICON_Production] Production toward Heavy Cavalry units. Mines over Bonus, Luxury, and Strategic resources provide +1 [ICON_Gold] Gold.</Text></Replace>
+    <Replace Tag="LOC_RESOURCE_BEER_NAME" Language="en_US"><Text>Beer</Text></Replace>
     <Replace Tag="LOC_IMPROVEMENT_CZECH_BREWERY_NAME" Language="en_US"><Text>Brewery</Text></Replace>
-    <Replace Tag="LOC_IMPROVEMENT_CZECH_BREWERY_DESCRIPTION" Language="en_US"><Text>Unique Czech improvement unlocked with Guilds. Must be built on Wheat near Fresh Water. Provides +1 [ICON_Gold] Gold, +1 [ICON_Food] Food, +1 Amenity, and +0.5 Housing. Receives +1 [ICON_Faith] Faith for each adjacent Holy Site, and +1 [ICON_Gold] Gold for each adjacent Commercial Hub or Harbor. Receives +1 [ICON_Food] Food with Mass Production and +2 [ICON_Gold] Gold with Chemistry.</Text></Replace>
+    <Replace Tag="LOC_IMPROVEMENT_CZECH_BREWERY_DESCRIPTION" Language="en_US"><Text>Unique Czech improvement unlocked with Guilds. Must be built on Wheat near Fresh Water. Provides +1 [ICON_Gold] Gold, +1 [ICON_Food] Food, +0.5 Housing, and 1 [ICON_RESOURCE_BEER] Beer, a unique Luxury resource. Receives +1 [ICON_Faith] Faith for each adjacent Holy Site, +1 [ICON_Gold] Gold for each adjacent Commercial Hub or Harbor, and +1 [ICON_Food] Food from every 2 adjacent Farms. Receives +1 [ICON_Food] Food with Mass Production and +2 [ICON_Gold] Gold with Chemistry.</Text></Replace>
     <Replace Tag="LOC_CZECH_BREWERY_HOLY_SITE_FAITH" Language="en_US"><Text>+{1_num} [ICON_Faith] Faith from the adjacent Holy Site.</Text></Replace>
     <Replace Tag="LOC_CZECH_BREWERY_COMMERCIAL_HUB_GOLD" Language="en_US"><Text>+{1_num} [ICON_Gold] Gold from the adjacent Commercial Hub.</Text></Replace>
     <Replace Tag="LOC_CZECH_BREWERY_HARBOR_GOLD" Language="en_US"><Text>+{1_num} [ICON_Gold] Gold from the adjacent Harbor.</Text></Replace>
+    <Replace Tag="LOC_CZECH_BREWERY_FARM_FOOD" Language="en_US"><Text>+{1_num} [ICON_Food] Food from every 2 adjacent Farms.</Text></Replace>
     <Replace Tag="LOC_UNIT_CZECH_HUSSITE_WAR_WAGON_NAME" Language="en_US"><Text>Hussite War Wagon</Text></Replace>
-    <Replace Tag="LOC_UNIT_CZECH_HUSSITE_WAR_WAGON_DESCRIPTION" Language="en_US"><Text>Czech unique ranged unit unlocked with the Reformed Church civic. Stronger than the Crossbowman but weaker than the Field Cannon. Has increased defensive Combat Strength and upgrades into the Field Cannon.</Text></Replace>
+    <Replace Tag="LOC_UNIT_CZECH_HUSSITE_WAR_WAGON_DESCRIPTION" Language="en_US"><Text>Czech unique ranged unit unlocked with the Reformed Church civic. Stronger than the Crossbowman but weaker than the Field Cannon. Gains +10 [ICON_Strength] Combat Strength when defending while fortified, and an additional +3 [ICON_Strength] Combat Strength for each adjacent Hussite War Wagon when defending. Upgrades into the Field Cannon.</Text></Replace>
+    <Replace Tag="LOC_ABILITY_CZECH_HUSSITE_WAR_WAGON_WAGENBURG_NAME" Language="en_US"><Text>Wagenburg</Text></Replace>
+    <Replace Tag="LOC_ABILITY_CZECH_HUSSITE_WAR_WAGON_WAGENBURG_DESCRIPTION" Language="en_US"><Text>+10 [ICON_Strength] Combat Strength when defending while fortified, and +3 [ICON_Strength] Combat Strength for each adjacent Hussite War Wagon when defending.</Text></Replace>
+    <Replace Tag="LOC_ABILITY_CZECH_HUSSITE_WAR_WAGON_DEFENSE_STRENGTH_DESCRIPTION" Language="en_US"><Text>+{1_Amount} [ICON_Strength] Combat Strength from fortified Wagenburg.</Text></Replace>
+    <Replace Tag="LOC_ABILITY_CZECH_HUSSITE_WAR_WAGON_ADJACENCY_STRENGTH_DESCRIPTION" Language="en_US"><Text>+{1_Amount} [ICON_Strength] Combat Strength from adjacent Hussite War Wagons.</Text></Replace>
     <Replace Tag="LOC_CITY_PRAGUE_NAME" Language="en_US"><Text>Prague</Text></Replace>
     <Replace Tag="LOC_CITY_BRNO_NAME" Language="en_US"><Text>Brno</Text></Replace>
     <Replace Tag="LOC_CITY_OSTRAVA_NAME" Language="en_US"><Text>Ostrava</Text></Replace>
@@ -34,19 +40,50 @@
     <Replace Tag="LOC_CITY_ZNOJMO_NAME" Language="en_US"><Text>Znojmo</Text></Replace>
 
     <Replace Tag="LOC_CITY_OPAVA_NAME" Language="en_US"><Text>Opava</Text></Replace>
-    <Replace Tag="LOC_CITY_KROMERIZ_NAME" Language="en_US"><Text>Kromeriz</Text></Replace>
-    <Replace Tag="LOC_CITY_UHERSKE_HRADISTE_NAME" Language="en_US"><Text>Uherske Hradiste</Text></Replace>
-    <Replace Tag="LOC_CITY_PREROV_NAME" Language="en_US"><Text>Prerov</Text></Replace>
-    <Replace Tag="LOC_CITY_PROSTEJOV_NAME" Language="en_US"><Text>Prostejov</Text></Replace>
-    <Replace Tag="LOC_CITY_TREBIC_NAME" Language="en_US"><Text>Trebic</Text></Replace>
-    <Replace Tag="LOC_CITY_NOVY_JICIN_NAME" Language="en_US"><Text>Novy Jicin</Text></Replace>
-    <Replace Tag="LOC_CITY_FRYDEK_MISTEK_NAME" Language="en_US"><Text>Frydek-Mistek</Text></Replace>
-    <Replace Tag="LOC_CITY_KARVINA_NAME" Language="en_US"><Text>Karvina</Text></Replace>
-    <Replace Tag="LOC_CITY_TESIN_NAME" Language="en_US"><Text>Tesin</Text></Replace>
+    <Replace Tag="LOC_CITY_KROMERIZ_NAME" Language="en_US"><Text>Kroměříž</Text></Replace>
+    <Replace Tag="LOC_CITY_UHERSKE_HRADISTE_NAME" Language="en_US"><Text>Uherské Hradiště</Text></Replace>
+    <Replace Tag="LOC_CITY_PREROV_NAME" Language="en_US"><Text>Přerov</Text></Replace>
+    <Replace Tag="LOC_CITY_PROSTEJOV_NAME" Language="en_US"><Text>Prostějov</Text></Replace>
+    <Replace Tag="LOC_CITY_TREBIC_NAME" Language="en_US"><Text>Třebíč</Text></Replace>
+    <Replace Tag="LOC_CITY_NOVY_JICIN_NAME" Language="en_US"><Text>Nový Jičín</Text></Replace>
+    <Replace Tag="LOC_CITY_FRYDEK_MISTEK_NAME" Language="en_US"><Text>Frýdek-Místek</Text></Replace>
+    <Replace Tag="LOC_CITY_KARVINA_NAME" Language="en_US"><Text>Karviná</Text></Replace>
+    <Replace Tag="LOC_CITY_TESIN_NAME" Language="en_US"><Text>Těšín</Text></Replace>
     <Replace Tag="LOC_CITY_KRNOV_NAME" Language="en_US"><Text>Krnov</Text></Replace>
-    <Replace Tag="LOC_CITY_BRUNTAL_NAME" Language="en_US"><Text>Bruntal</Text></Replace>
-    <Replace Tag="LOC_CITY_HODONIN_NAME" Language="en_US"><Text>Hodonin</Text></Replace>
+    <Replace Tag="LOC_CITY_BRUNTAL_NAME" Language="en_US"><Text>Bruntál</Text></Replace>
+    <Replace Tag="LOC_CITY_HODONIN_NAME" Language="en_US"><Text>Hodonín</Text></Replace>
     <Replace Tag="LOC_CITY_MIKULOV_NAME" Language="en_US"><Text>Mikulov</Text></Replace>
+
+    <Replace Tag="LOC_NAMED_RIVER_CZECHIA_VLTAVA_NAME" Language="en_US"><Text>Vltava River</Text></Replace>
+    <Replace Tag="LOC_NAMED_RIVER_CZECHIA_LABE_NAME" Language="en_US"><Text>Labe River</Text></Replace>
+    <Replace Tag="LOC_NAMED_RIVER_CZECHIA_MORAVA_NAME" Language="en_US"><Text>Morava River</Text></Replace>
+    <Replace Tag="LOC_NAMED_RIVER_CZECHIA_DYJE_NAME" Language="en_US"><Text>Dyje River</Text></Replace>
+    <Replace Tag="LOC_NAMED_RIVER_CZECHIA_OHRE_NAME" Language="en_US"><Text>Ohře River</Text></Replace>
+    <Replace Tag="LOC_NAMED_RIVER_CZECHIA_SAZAVA_NAME" Language="en_US"><Text>Sázava River</Text></Replace>
+    <Replace Tag="LOC_NAMED_RIVER_CZECHIA_LUZNICE_NAME" Language="en_US"><Text>Lužnice River</Text></Replace>
+    <Replace Tag="LOC_NAMED_RIVER_CZECHIA_ODRA_NAME" Language="en_US"><Text>Odra River</Text></Replace>
+
+    <Replace Tag="LOC_NAMED_MOUNTAIN_CZECHIA_KRKONOSE_NAME" Language="en_US"><Text>Krkonoše Mountains</Text></Replace>
+    <Replace Tag="LOC_NAMED_MOUNTAIN_CZECHIA_SUMAVA_NAME" Language="en_US"><Text>Šumava Mountains</Text></Replace>
+    <Replace Tag="LOC_NAMED_MOUNTAIN_CZECHIA_BESKYDY_NAME" Language="en_US"><Text>Beskydy Mountains</Text></Replace>
+    <Replace Tag="LOC_NAMED_MOUNTAIN_CZECHIA_JESENIKY_NAME" Language="en_US"><Text>Jeseníky Mountains</Text></Replace>
+    <Replace Tag="LOC_NAMED_MOUNTAIN_CZECHIA_ORLICKE_HORY_NAME" Language="en_US"><Text>Orlické Mountains</Text></Replace>
+    <Replace Tag="LOC_NAMED_MOUNTAIN_CZECHIA_KRUSNE_HORY_NAME" Language="en_US"><Text>Krušné Mountains</Text></Replace>
+    <Replace Tag="LOC_NAMED_MOUNTAIN_CZECHIA_BILE_KARPATY_NAME" Language="en_US"><Text>Bílé Karpaty Mountains</Text></Replace>
+    <Replace Tag="LOC_NAMED_MOUNTAIN_CZECHIA_CESKOMORAVSKA_VRCHOVINA_NAME" Language="en_US"><Text>Českomoravská vrchovina Mountains</Text></Replace>
+
+    <Replace Tag="LOC_NAMED_LAKE_CZECHIA_CERNE_JEZERO_NAME" Language="en_US"><Text>Černé jezero</Text></Replace>
+    <Replace Tag="LOC_NAMED_LAKE_CZECHIA_CERTOVO_JEZERO_NAME" Language="en_US"><Text>Čertovo jezero</Text></Replace>
+    <Replace Tag="LOC_NAMED_LAKE_CZECHIA_PLESNE_JEZERO_NAME" Language="en_US"><Text>Plešné jezero</Text></Replace>
+    <Replace Tag="LOC_NAMED_LAKE_CZECHIA_PRASILSKE_JEZERO_NAME" Language="en_US"><Text>Prášilské jezero</Text></Replace>
+    <Replace Tag="LOC_NAMED_LAKE_CZECHIA_LAKA_NAME" Language="en_US"><Text>Jezero Laka</Text></Replace>
+    <Replace Tag="LOC_NAMED_LAKE_CZECHIA_ODLEZELSKE_JEZERO_NAME" Language="en_US"><Text>Odlezelské jezero</Text></Replace>
+
+    <Replace Tag="LOC_NAMED_VOLCANO_CZECHIA_KOMORNI_HURKA_NAME" Language="en_US"><Text>Komorní hůrka</Text></Replace>
+    <Replace Tag="LOC_NAMED_VOLCANO_CZECHIA_ZELEZNA_HURKA_NAME" Language="en_US"><Text>Železná hůrka</Text></Replace>
+    <Replace Tag="LOC_NAMED_VOLCANO_CZECHIA_MILESOVKA_NAME" Language="en_US"><Text>Milešovka</Text></Replace>
+    <Replace Tag="LOC_NAMED_VOLCANO_CZECHIA_RIP_NAME" Language="en_US"><Text>Říp</Text></Replace>
+    <Replace Tag="LOC_NAMED_VOLCANO_CZECHIA_TROSKY_NAME" Language="en_US"><Text>Trosky</Text></Replace>
 
   </LocalizedText>
 </GameData>

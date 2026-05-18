@@ -2,8 +2,18 @@
 <GameInfo>
 
   <Types>
+    <Row Type="RESOURCE_BEER" Kind="KIND_RESOURCE"/>
     <Row Type="IMPROVEMENT_CZECH_BREWERY" Kind="KIND_IMPROVEMENT"/>
   </Types>
+
+  <Resources>
+    <Row
+      ResourceType="RESOURCE_BEER"
+      Name="LOC_RESOURCE_BEER_NAME"
+      ResourceClassType="RESOURCECLASS_LUXURY"
+      Happiness="4"
+      Frequency="0"/>
+  </Resources>
 
   <Improvements>
     <Row
@@ -34,27 +44,30 @@
   </Improvement_YieldChanges>
 
   <ImprovementModifiers>
-    <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" ModifierId="CZECH_BREWERY_AMENITY"/>
+    <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" ModifierId="CZECH_BREWERY_BEER"/>
   </ImprovementModifiers>
 
   <Modifiers>
-    <Row ModifierId="CZECH_BREWERY_AMENITY" ModifierType="MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_AMENITY"/>
+    <Row ModifierId="CZECH_BREWERY_BEER" ModifierType="MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY"/>
   </Modifiers>
 
   <ModifierArguments>
-    <Row ModifierId="CZECH_BREWERY_AMENITY" Name="Amount" Value="1"/>
+    <Row ModifierId="CZECH_BREWERY_BEER" Name="ResourceType" Value="RESOURCE_BEER"/>
+    <Row ModifierId="CZECH_BREWERY_BEER" Name="Amount" Value="1"/>
   </ModifierArguments>
 
   <Improvement_Adjacencies>
     <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" YieldChangeId="CzechBrewery_HolySite_Faith"/>
     <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" YieldChangeId="CzechBrewery_CommercialHub_Gold"/>
     <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" YieldChangeId="CzechBrewery_Harbor_Gold"/>
+    <Row ImprovementType="IMPROVEMENT_CZECH_BREWERY" YieldChangeId="CzechBrewery_Farm_Food"/>
   </Improvement_Adjacencies>
 
   <Adjacency_YieldChanges>
     <Row ID="CzechBrewery_HolySite_Faith" Description="LOC_CZECH_BREWERY_HOLY_SITE_FAITH" YieldType="YIELD_FAITH" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_HOLY_SITE"/>
     <Row ID="CzechBrewery_CommercialHub_Gold" Description="LOC_CZECH_BREWERY_COMMERCIAL_HUB_GOLD" YieldType="YIELD_GOLD" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_COMMERCIAL_HUB"/>
     <Row ID="CzechBrewery_Harbor_Gold" Description="LOC_CZECH_BREWERY_HARBOR_GOLD" YieldType="YIELD_GOLD" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_HARBOR"/>
+    <Row ID="CzechBrewery_Farm_Food" Description="LOC_CZECH_BREWERY_FARM_FOOD" YieldType="YIELD_FOOD" YieldChange="1" TilesRequired="2" AdjacentImprovement="IMPROVEMENT_FARM"/>
   </Adjacency_YieldChanges>
 
   <!-- This is the correct table on this Civ 6 build. -->

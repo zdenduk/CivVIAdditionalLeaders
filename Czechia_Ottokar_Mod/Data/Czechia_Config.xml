@@ -16,8 +16,8 @@
       LeaderAbilityName="LOC_TRAIT_LEADER_IRON_AND_GOLDEN_KING_NAME"
       LeaderAbilityDescription="LOC_TRAIT_LEADER_IRON_AND_GOLDEN_KING_DESCRIPTION"
       LeaderAbilityIcon="ICON_LEADER_MATTHIAS_CORVINUS"
-      Portrait="LEADER_MATTHIAS_CORVINUS_NEUTRAL"
-      PortraitBackground="LEADER_MATTHIAS_CORVINUS_BACKGROUND"/>
+      Portrait="LEADER_OTTOKAR_II_NEUTRAL"
+      PortraitBackground="LEADER_OTTOKAR_II_BACKGROUND"/>
 
     <Row
       Domain="Players:Expansion2_Players"
@@ -37,58 +37,11 @@
       PortraitBackground="LEADER_MATTHIAS_CORVINUS_BACKGROUND"/>
   </Players>
 
-  <PlayerItems>
-    <!-- Keep these entries so the leader/civ choosing screen shows Czechia's uniques. -->
-
+  <LoadingInfo>
     <Row
-      Domain="Players:Expansion2_Players"
-      CivilizationType="CIVILIZATION_CZECHIA"
       LeaderType="LEADER_OTTOKAR_II"
-      Type="TRAIT_CIVILIZATION_CZECH_BREWERY"
-      Icon="ICON_IMPROVEMENT_FARM"
-      Name="LOC_IMPROVEMENT_CZECH_BREWERY_NAME"
-      Description="LOC_IMPROVEMENT_CZECH_BREWERY_DESCRIPTION"
-      SortIndex="30"/>
-
-    <Row
-      Domain="Players:Expansion2_Players"
-      CivilizationType="CIVILIZATION_CZECHIA"
-      LeaderType="LEADER_OTTOKAR_II"
-      Type="TRAIT_CIVILIZATION_HUSSITE_WAR_WAGON"
-      Icon="ICON_UNIT_FIELD_CANNON"
-      Name="LOC_UNIT_CZECH_HUSSITE_WAR_WAGON_NAME"
-      Description="LOC_UNIT_CZECH_HUSSITE_WAR_WAGON_DESCRIPTION"
-      SortIndex="40"/>
-
-    <Row
-      Domain="Players:Expansion2_Players"
-      CivilizationType="CIVILIZATION_CZECHIA"
-      LeaderType="LEADER_MATTHIAS_CORVINUS_CZECHIA"
-      Type="UNIT_HUNGARY_BLACK_ARMY"
-      Icon="ICON_UNIT_HUNGARY_BLACK_ARMY"
-      Name="LOC_UNIT_HUNGARY_BLACK_ARMY_NAME"
-      Description="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION"
-      SortIndex="25"/>
-
-    <Row
-      Domain="Players:Expansion2_Players"
-      CivilizationType="CIVILIZATION_CZECHIA"
-      LeaderType="LEADER_MATTHIAS_CORVINUS_CZECHIA"
-      Type="TRAIT_CIVILIZATION_CZECH_BREWERY"
-      Icon="ICON_IMPROVEMENT_FARM"
-      Name="LOC_IMPROVEMENT_CZECH_BREWERY_NAME"
-      Description="LOC_IMPROVEMENT_CZECH_BREWERY_DESCRIPTION"
-      SortIndex="30"/>
-
-    <Row
-      Domain="Players:Expansion2_Players"
-      CivilizationType="CIVILIZATION_CZECHIA"
-      LeaderType="LEADER_MATTHIAS_CORVINUS_CZECHIA"
-      Type="TRAIT_CIVILIZATION_HUSSITE_WAR_WAGON"
-      Icon="ICON_UNIT_FIELD_CANNON"
-      Name="LOC_UNIT_CZECH_HUSSITE_WAR_WAGON_NAME"
-      Description="LOC_UNIT_CZECH_HUSSITE_WAR_WAGON_DESCRIPTION"
-      SortIndex="40"/>
-  </PlayerItems>
+      ForegroundImage="LEADER_OTTOKAR_II_EMPTY_FOREGROUND"
+      BackgroundImage="LEADER_OTTOKAR_II_BACKGROUND"/>
+  </LoadingInfo>
 
 </GameInfo>

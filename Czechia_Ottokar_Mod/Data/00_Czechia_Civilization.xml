@@ -43,16 +43,36 @@
   </CivilizationTraits>
 
   <Modifiers>
+    <Row ModifierId="CZECHIA_OSTSIEDLUNG_PRE_NATIONALISM_CULTURE" ModifierType="MODIFIER_SINGLE_CITY_ADJUST_YIELD_CHANGE" SubjectRequirementSetId="CZECHIA_OSTSIEDLUNG_NO_NATIONALISM_REQUIREMENTS"/>
     <Row ModifierId="CZECHIA_OSTSIEDLUNG_NATIONALISM_LOYALTY" ModifierType="MODIFIER_SINGLE_CITY_ADJUST_IDENTITY_PER_TURN"/>
   </Modifiers>
 
   <ModifierArguments>
-    <Row ModifierId="CZECHIA_OSTSIEDLUNG_NATIONALISM_LOYALTY" Name="Amount" Value="-5"/>
+    <Row ModifierId="CZECHIA_OSTSIEDLUNG_PRE_NATIONALISM_CULTURE" Name="YieldType" Value="YIELD_CULTURE"/>
+    <Row ModifierId="CZECHIA_OSTSIEDLUNG_PRE_NATIONALISM_CULTURE" Name="Amount" Value="1"/>
+    <Row ModifierId="CZECHIA_OSTSIEDLUNG_NATIONALISM_LOYALTY" Name="Amount" Value="-6"/>
   </ModifierArguments>
 
   <ModifierStrings>
+    <Row ModifierId="CZECHIA_OSTSIEDLUNG_PRE_NATIONALISM_CULTURE" Context="Preview" Text="LOC_TRAIT_CIVILIZATION_OSTSIEDLUNG_NAME"/>
     <Row ModifierId="CZECHIA_OSTSIEDLUNG_NATIONALISM_LOYALTY" Context="Preview" Text="LOC_TRAIT_CIVILIZATION_OSTSIEDLUNG_NAME"/>
   </ModifierStrings>
+
+  <RequirementSets>
+    <Row RequirementSetId="CZECHIA_OSTSIEDLUNG_NO_NATIONALISM_REQUIREMENTS" RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+  </RequirementSets>
+
+  <RequirementSetRequirements>
+    <Row RequirementSetId="CZECHIA_OSTSIEDLUNG_NO_NATIONALISM_REQUIREMENTS" RequirementId="REQUIRES_CZECHIA_PLAYER_DOES_NOT_HAVE_NATIONALISM"/>
+  </RequirementSetRequirements>
+
+  <Requirements>
+    <Row RequirementId="REQUIRES_CZECHIA_PLAYER_DOES_NOT_HAVE_NATIONALISM" RequirementType="REQUIREMENT_PLAYER_HAS_CIVIC" Inverse="true"/>
+  </Requirements>
+
+  <RequirementArguments>
+    <Row RequirementId="REQUIRES_CZECHIA_PLAYER_DOES_NOT_HAVE_NATIONALISM" Name="CivicType" Value="CIVIC_NATIONALISM"/>
+  </RequirementArguments>
 
   <Leaders>
     <Row
