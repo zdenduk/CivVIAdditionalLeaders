@@ -36,8 +36,8 @@ It must be built by a Builder on Wheat near Fresh Water and provides:
 
 - +1 Gold
 - +1 Food
-- +1 Amenity
 - +0.5 Housing
+- 1 Beer, a unique Luxury resource
 - +1 Faith for each adjacent Holy Site
 - +1 Gold for each adjacent Commercial Hub or Harbor
 - +1 Food after Mass Production
