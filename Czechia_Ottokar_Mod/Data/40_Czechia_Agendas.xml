@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+  <HistoricalAgendas>
+    <Row LeaderType="LEADER_OTTOKAR_II" AgendaType="AGENDA_LORD_OF_MINES"/>
+    <Row LeaderType="LEADER_MATTHIAS_CORVINUS_CZECHIA" AgendaType="AGENDA_RAVEN_BANNER"/>
+  </HistoricalAgendas>
+
+  <FavoredReligions>
+    <Row LeaderType="LEADER_OTTOKAR_II" ReligionType="RELIGION_CATHOLICISM"/>
+    <Row LeaderType="LEADER_MATTHIAS_CORVINUS_CZECHIA" ReligionType="RELIGION_CATHOLICISM"/>
+  </FavoredReligions>
+</GameInfo>

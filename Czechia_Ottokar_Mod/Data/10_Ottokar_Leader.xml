@@ -22,6 +22,12 @@
       InheritFrom="LEADER_DEFAULT"/>
   </Leaders>
 
+  <DiplomacyInfo>
+    <Row
+      Type="LEADER_OTTOKAR_II"
+      BackgroundImage="LEADER_OTTOKAR_II_BACKGROUND"/>
+  </DiplomacyInfo>
+
 
   <!-- ========================================================= -->
   <!-- LEADER TRAIT                                              -->

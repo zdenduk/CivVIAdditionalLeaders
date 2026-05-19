@@ -1,12 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="9A4D2B0C-2F3A-4D67-9C7C-2B2F7E5A92A1" version="17">
+<Mod id="9A4D2B0C-2F3A-4D67-9C7C-2B2F7E5A92A1" version="18">
   <Properties>
-    <Name>Czechia_Ottokar_Mod</Name>
-    <Description>Adds Czechia as a playable civilization, led by Ottokar II. Also allows Matthias Corvinus to lead Czechia.</Description>
+    <Name>Czechia: Ottokar II</Name>
+    <Description>Adds Czechia as a playable civilization for Rise and Fall and Gathering Storm. Includes Ottokar II as leader, Matthias Corvinus as an alternate Czechia leader, the Ostsiedlung civilization ability, the Brewery unique improvement, the Beer unique luxury resource, the Hussite War Wagon unique unit, custom colors, icons, named places, diplomacy text, loading text, and Civilopedia entries.</Description>
     <Created>1778870901</Created>
-    <Teaser>Adds Czechia with Ottokar II.</Teaser>
-    <Authors>Your Name</Authors>
-    <SupportsHotSeat>0</SupportsHotSeat>
+    <Teaser>Adds Czechia led by Ottokar II, with Matthias Corvinus as an alternate leader.</Teaser>
+    <Authors>Cenek</Authors>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
     <CompatibleVersions>2.0</CompatibleVersions>
   </Properties>
   <Dependencies>
@@ -40,6 +43,7 @@
       <File>Data/20_Czechia_Brewery.xml</File>
       <File>Data/30_Czechia_WarWagon.xml</File>
       <File>Data/35_Czechia_NamedPlaces.xml</File>
+      <File>Data/40_Czechia_Agendas.xml</File>
     </UpdateDatabase>
     <UpdateText id="Czechia_InGame_Text">
       <File>Localization/Text_en_US.xml</File>
@@ -75,6 +79,7 @@
     <File>Data/20_Czechia_Brewery.xml</File>
     <File>Data/30_Czechia_WarWagon.xml</File>
     <File>Data/35_Czechia_NamedPlaces.xml</File>
+    <File>Data/40_Czechia_Agendas.xml</File>
     <File>Data/Czechia_Config.xml</File>
     <File>Data/Czechia_PlayerItems.sql</File>
     <File>Localization/Text_en_US.xml</File>

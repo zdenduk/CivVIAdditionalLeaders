@@ -2,7 +2,7 @@
 
 Additional civilization and leader content for Sid Meier's Civilization VI.
 
-This repository currently contains `Czechia_Ottokar_Mod`, a Civilization VI mod that adds Czechia as a playable civilization led by Ottokar II, with an additional Czechia variant for Matthias Corvinus.
+This repository currently contains `Czechia_Ottokar_Mod`, a Civilization VI mod titled **Czechia: Ottokar II**. It adds Czechia as a playable civilization led by Ottokar II, with an additional Czechia variant for Matthias Corvinus.
 
 ## Contents
 
@@ -13,6 +13,7 @@ This repository currently contains `Czechia_Ottokar_Mod`, a Civilization VI mod 
 - **Unique improvement:** Brewery
 - **Unique unit:** Hussite War Wagon
 - **Unique luxury resource:** Beer
+- **Extra content:** custom colors, icons, named places, agendas, diplomacy text, loading text, and Civilopedia entries
 
 ## Czechia
 
@@ -27,7 +28,9 @@ After the Nationalism civic is unlocked, those Ostsiedlung cities receive a -5 L
 Ottokar II receives:
 
 - +30% Production toward Heavy Cavalry units
-- +30% Production toward Commercial Hubs
+- Mines over Bonus, Luxury, and Strategic resources provide +1 Gold
+
+Ottokar II favors Catholicism and uses the Lord of Mines historical agenda.
 
 ### Unique Improvement: Brewery
 
