@@ -19,7 +19,7 @@ This repository currently contains `Czechia_Ottokar_Mod`, a Civilization VI mod 
 
 ### Civilization Ability: Ostsiedlung
 
-Non-capital Czech cities founded on Hills start with 3 Population.
+Non-capital Czech cities founded on Hills start with 2 Population. They receive +1 Culture until the Nationalism civic is unlocked
 
 After the Nationalism civic is unlocked, those Ostsiedlung cities receive a -5 Loyalty penalty each turn.
 
